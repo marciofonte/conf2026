@@ -183,16 +183,31 @@
                         <!-- Slide 1 (Produtos 1 a 4) -->
                         <div class="carousel-item active">
                             <div class="row g-4">
+                                <!-- T-shirt 01------------------------------------------ -->
                                 <div class="col-6 col-md-3">
                                     <div class="produto-card">
-                                        <div class="produto-img-placeholder"></div>
-                                        <div class="produto-info">
-                                            <h6>NOME DO PRODUTO 1</h6>
-                                            <p>Informações sobre o produto</p>
+                                        
+                                        <!-- Carrossel T-shirt 01 -->
+                                        <div id="carouselCanecas" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="img/loja/tshirt_01_frente.jpg" class="d-block w-100 produto-img-carousel" alt="Caneca 1">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/loja/tshirt_01_costas.jpg" class="d-block w-100 produto-img-carousel" alt="Caneca 2">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="produto-info pt-3">
+                                            <h6>T-SHIRT SANTO É O SENHOR</h6>
+                                            <p>Coleção CONF 2026</p>
                                             <span class="produto-preco">R$ 30,00</span>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- T-shirt 01------------------------------------------ -->
+
                                 <div class="col-6 col-md-3">
                                     <div class="produto-card"><div class="produto-img-placeholder"></div><div class="produto-info"><h6>NOME DO PRODUTO 2</h6><p>Informações sobre o produto</p><span class="produto-preco">R$ 30,00</span></div></div>
                                 </div>
@@ -204,6 +219,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- Slide 2 (Produtos 5 a 8) -->
                         <div class="carousel-item">
                             <div class="row g-4">
@@ -231,11 +247,11 @@
                     </div>
                 </div>
 
-                <!-- Controles do Carousel fora da div do slide -->
+                <!-- Controles do Carousel principal de produtos -->
                 <button class="carousel-control-prev custom-arrow-prev" type="button" data-bs-target="#carouselLoja" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </button>
-                <button class="carousel-control-next" type="custom-arrow-next" data-bs-target="#carouselLoja" data-bs-slide="next">
+                <button class="carousel-control-next custom-arrow-next" type="button" data-bs-target="#carouselLoja" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </button>
             </div>

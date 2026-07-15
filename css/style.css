@@ -308,3 +308,10 @@ body {
     transform: translateY(-5px); /* Dá um leve salto elegante ao passar o mouse */
     opacity: 0.9;
 }
+
+/* Garante que o carrossel fique do mesmo tamanho dos outros placeholders da loja */
+.produto-img-carousel {
+    height: 280px;          /* Casando perfeitamente com os seus 280px padrão */
+    object-fit: cover;      /* Não deixa a imagem da caneca distorcer */
+    border-radius: 8px;     /* Deixa os cantos arredondados */
+}
