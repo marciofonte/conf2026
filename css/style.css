@@ -122,7 +122,7 @@ body {
 .hero-home {
     width: 100%;
     aspect-ratio: 2 / 1; 
-    background-image: url('../_img/img-home-hori.jpg'); 
+    background-image: url('../img/img-home-hori.jpg'); 
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: top center;
@@ -132,7 +132,7 @@ body {
 @media (max-width: 768px) {
     .hero-home {
         aspect-ratio: 9 / 16; 
-        background-image: url('../_img/img-home-verti.jpg');
+        background-image: url('../img/img-home-verti.jpg');
         background-size: 100% auto;
     }
 }
@@ -159,7 +159,7 @@ body {
 .conferencia-img-placeholder {
     width: 100%;
     height: 380px;
-    background-image: url('../_img/img-conf.jpg'); /* Caminho da sua imagem */
+    background-image: url('../img/img-conf.jpg'); /* Caminho da sua imagem */
     background-size: cover;       /* Preenche todo o espaço sem distorcer */
     background-position: center;  /* Centraliza a imagem no corte */
     background-repeat: no-repeat;
@@ -181,12 +181,12 @@ body {
 }
 
 /* Imagem específica para cada preletor */
-.p-1 { background-image: url('../_img/preletor_1.jpg'); }
-.p-2 { background-image: url('../_img/preletor_2.jpg'); }
-.p-3 { background-image: url('../_img/preletor_3.jpg'); }
-.p-4 { background-image: url('../_img/preletor_4.jpg'); }
-.p-5 { background-image: url('../_img/preletor_5.jpg'); }
-.p-6 { background-image: url('../_img/preletor_6.jpg'); }
+.p-1 { background-image: url('../img/preletor_1.jpg'); }
+.p-2 { background-image: url('../img/preletor_2.jpg'); }
+.p-3 { background-image: url('../img/preletor_3.jpg'); }
+.p-4 { background-image: url('../img/preletor_4.jpg'); }
+.p-5 { background-image: url('../img/preletor_5.jpg'); }
+.p-6 { background-image: url('../img/preletor_6.jpg'); }
 .preletor-info h5 { font-size: 0.95rem; font-weight: 800; margin-bottom: 5px; }
 .preletor-info p { font-size: 0.8rem; color: var(--text-muted); }
 
