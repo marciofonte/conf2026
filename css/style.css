@@ -1,0 +1,310 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+:root {
+    --bg-dark-blue: #011d3d;
+    --bg-deep-blue: #022b57;
+    --bg-charcoal: #2a2c2c;
+    --accent-orange: #f37021;
+    --text-light: #ffffff;
+    --text-muted: #b2c0cc;
+    --font-primary: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--bg-dark-blue);
+    color: var(--text-light);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* 3 Círculos antes dos títulos com as cores reais do layout */
+.dot-group {
+    display: inline-flex;
+    gap: 6px;
+    margin-right: 12px;
+    align-items: center;
+}
+
+.dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot-blue { background-color: #00aeef; }
+.dot-orange { background-color: #f37021; }
+.dot-yellow { background-color: #ffc20e; }
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.header-nav {
+    background-color: #011326;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.viva-logo {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: var(--text-light);
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 8px 0;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--accent-orange) !important;
+}
+
+.btn-inscreva-se-nav {
+    background-color: var(--accent-orange);
+    color: #fff !important;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-decoration: none;
+    width: auto;
+}
+
+.btn-inscreva-se-nav:hover {
+    background-color: #d95e14;
+}
+
+/* Customização do botão hambúrguer mobile para combinar com o visual */
+.custom-toggler.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.custom-toggler.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Espaçamento interno do menu colapsado no mobile */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #011326;
+        padding: 15px 0;
+    }
+    .nav-link {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 12px 0;
+    }
+    .btn-inscreva-se-nav {
+        margin-top: 10px;
+        width: 100%; /* Botão ocupa toda a largura no menu do mobile */
+    }
+}
+/* ==========================================================================
+   HOME (DESKTOP FIRST)
+   ========================================================================== */
+.hero-home {
+    width: 100%;
+    aspect-ratio: 2 / 1; 
+    background-image: url('../_img/img-home-hori.jpg'); 
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+/* SMARTPHONE (Imagem Vertical) */
+@media (max-width: 768px) {
+    .hero-home {
+        aspect-ratio: 9 / 16; 
+        background-image: url('../_img/img-home-verti.jpg');
+        background-size: 100% auto;
+    }
+}
+
+/* ==========================================================================
+   A CONFERÊNCIA
+   ========================================================================== */
+.conferencia-section { padding: 100px 0; }
+.conferencia-text {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 30px 0 40px;
+    text-align: justify;
+}
+.btn-inscreva-se {
+    background-color: var(--accent-orange);
+    color: #fff;
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-weight: 800;
+    text-decoration: none;
+}
+.conferencia-img-placeholder {
+    width: 100%;
+    height: 380px;
+    background-image: url('../_img/img-conf.jpg'); /* Caminho da sua imagem */
+    background-size: cover;       /* Preenche todo o espaço sem distorcer */
+    background-position: center;  /* Centraliza a imagem no corte */
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+/* ==========================================================================
+   PRELETORES
+   ========================================================================== */
+.preletores-section { padding: 100px 0; background-color: var(--bg-deep-blue); }
+/* Regra base para todos os placeholders (sem a cor verde) */
+.preletor-img-placeholder { 
+    height: 220px; 
+    margin-bottom: 15px; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px; /* Deixa as fotos com cantos arredondados elegantes */
+}
+
+/* Imagem específica para cada preletor */
+.p-1 { background-image: url('../_img/preletor_1.jpg'); }
+.p-2 { background-image: url('../_img/preletor_2.jpg'); }
+.p-3 { background-image: url('../_img/preletor_3.jpg'); }
+.p-4 { background-image: url('../_img/preletor_4.jpg'); }
+.p-5 { background-image: url('../_img/preletor_5.jpg'); }
+.p-6 { background-image: url('../_img/preletor_6.jpg'); }
+.preletor-info h5 { font-size: 0.95rem; font-weight: 800; margin-bottom: 5px; }
+.preletor-info p { font-size: 0.8rem; color: var(--text-muted); }
+
+/* ==========================================================================
+   PROGRAMAÇÃO
+   ========================================================================== */
+.programacao-section { padding: 100px 0; background-color: var(--bg-charcoal); }
+.programacao-item { border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 25px; margin-bottom: 25px; }
+.prog-date { color: #ffdf00; font-size: 0.8rem; font-weight: 800; margin-bottom: 12px; }
+.prog-desc { font-size: 0.9rem; margin-bottom: 5px; }
+.prog-author { font-size: 0.8rem; color: var(--text-muted); font-style: italic; }
+
+/* ==========================================================================
+   LOJA (Navegação Externa)
+   ========================================================================== */
+.loja-section { padding: 100px 0; }
+.produto-img-placeholder { height: 280px; background-color: #00e611; margin-bottom: 15px; }
+.produto-info h6 { font-size: 0.85rem; font-weight: 800; }
+.produto-info p { font-size: 0.75rem; color: var(--text-muted); }
+.produto-preco { font-weight: 800; }
+
+.btn-whatsapp {
+    background-color: #0d5ca3;
+    color: #fff;
+    padding: 15px 45px;
+    border-radius: 30px;
+    font-weight: 800;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Wrapper para posicionar as setas fora da área dos produtos */
+.carousel-outer-wrapper {
+    position: relative;
+    padding: 0 50px; /* Margem de segurança interna para as setas flutuarem */
+}
+
+/* Customização dos controles do Slide */
+.carousel-control-prev, .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+}
+
+.carousel-control-prev {
+    left: 0; /* Alinhado ao limite esquerdo da margem */
+}
+
+.carousel-control-next {
+    right: 0; /* Alinhado ao limite direito da margem */
+}
+
+@media (max-width: 768px) {
+    .carousel-outer-wrapper {
+        padding: 0; /* Remove margens no mobile e esconde setas para navegação por swipe natural */
+    }
+    .carousel-control-prev, .carousel-control-next { display: none; }
+}
+
+/* ==========================================================================
+   COMO CHEGAR / MAPA / FOOTER
+   ========================================================================== */
+.como-chegar-section { padding-top: 100px; background-color: var(--bg-charcoal); }
+
+/* Mapa com cores naturais do Google Maps */
+.map-container iframe { 
+    filter: none; 
+}
+
+.footer-section { background-color: #000; padding: 50px 0; }
+.footer-logo { font-size: 2.2rem; font-weight: 900; letter-spacing: 4px; }
+.footer-address { font-size: 0.9rem; color: var(--text-muted); }
+
+
+/* ==========================================================================
+   AJUSTES DE MARGEM/RESPIRO PARA SMARTPHONES
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* Cria uma margem interna de segurança de 24px nas laterais para todo o conteúdo */
+    .container {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+
+    /* Ajusta o menu aberto para também respeitar esse alinhamento */
+    .navbar-collapse {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Estilização da imagem do logo */
+.logo-img {
+    height: 30px;       
+    width: auto;        
+    display: inline-block; /* Alinhamento dinâmico que respeita a centralização */
+    vertical-align: middle;
+}
+
+/* Ajuste opcional para smartphones caso queira deixá-lo um pouco menor no mobile */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 23px;   /* Altura sutilmente menor para telas pequenas */
+    }
+}
+
+
+/* Efeito visual de clique para os preletores */
+.preletor-card {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.preletor-card:hover {
+    transform: translateY(-5px); /* Dá um leve salto elegante ao passar o mouse */
+    opacity: 0.9;
+}
