@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <!-- NAV/HEADER RESPONSIVO -->
@@ -26,28 +27,136 @@
             <!-- Links do Menu -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <nav class="navbar-nav align-items-lg-center gap-lg-4 mt-3 mt-lg-0">
-                    <a href="#" class="nav-link active">HOME</a>
                     <a href="#conferencia" class="nav-link">A CONFERÊNCIA</a>
                     <a href="#preletores" class="nav-link">PRELETORES</a>
                     <a href="#programacao" class="nav-link">PROGRAMAÇÃO</a>
-                    <a href="#loja" class="nav-link">LOJA</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                    <!-- <a href="#loja" class="nav-link">LOJA</a> -->
                     <a href="#como-chegar" class="nav-link">COMO CHEGAR</a>
-                    <a href="downloads.html" class="nav-link" target="_blank" rel="noopener noreferrer">DOWNLOADS</a>
+                    <!--<a href="downloads.html" class="nav-link" target="_blank" rel="noopener noreferrer">DOWNLOADS</a> -->
                     <div class="nav-item mt-2 mt-lg-0">
-                        <a href="#" class="btn-inscreva-se-nav d-inline-block text-center">INSCREVA-SE</a>
+                        <a href="#inscricao" class="btn-inscreva-se-nav d-inline-block text-center">INSCREVA-SE</a>
                     </div>
                 </nav>
             </div>
         </div>
     </header>
 
-    <!-- SECTION 1: HOME -->
-    <section id="home" class="hero-home">
-    </section>
+<section id="home">
 
-    <!-- SECTION 2: A CONFERÊNCIA -->
+    <div id="carouselHome"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="3000">
+
+
+        <div class="carousel-inner">
+
+            <!-- IMAGEM 01 -->
+            <div class="carousel-item active">
+                <img src="img/img-home-hori-01.jpg"
+                class="d-none d-md-block home-banner">
+                <img src="img/img-home-verti-01.jpg"
+                class="d-block d-md-none home-banner-mobile">
+            </div>
+            <!-- IMAGEM 02 -->
+            <div class="carousel-item">
+                <img src="img/img-home-hori-02.jpg"
+                class="d-none d-md-block home-banner">
+                <img src="img/img-home-verti-02.jpg"
+                class="d-block d-md-none home-banner-mobile">
+            </div>
+            <!-- IMAGEM 03 -->
+            <div class="carousel-item">
+                <img src="img/img-home-hori-03.jpg"
+                class="d-none d-md-block home-banner">
+                <img src="img/img-home-verti-03.jpg"
+                class="d-block d-md-none home-banner-mobile">
+            </div>
+            <!-- IMAGEM 04 -->
+            <div class="carousel-item">
+                <img src="img/img-home-hori-04.jpg"
+                class="d-none d-md-block home-banner">
+                <img src="img/img-home-verti-04.jpg"
+                class="d-block d-md-none home-banner-mobile">
+            </div>
+            <!-- IMAGEM 05 -->
+            <div class="carousel-item">
+                <img src="img/img-home-hori-05.jpg"
+                class="d-none d-md-block home-banner">
+                <img src="img/img-home-verti-05.jpg"
+                class="d-block d-md-none home-banner-mobile">
+            </div>
+            <!-- IMAGEM 06 -->
+            <div class="carousel-item">
+                <img src="img/img-home-hori-06.jpg"
+                class="d-none d-md-block home-banner">
+                <img src="img/img-home-verti-06.jpg"
+                class="d-block d-md-none home-banner-mobile">
+            </div>
+            <!-- IMAGEM 07 -->
+            <div class="carousel-item">
+                <img src="img/img-home-hori-07.jpg"
+                class="d-none d-md-block home-banner">
+                <img src="img/img-home-verti-07.jpg"
+                class="d-block d-md-none home-banner-mobile">
+            </div>
+            <!-- IMAGEM 08 -->
+            <div class="carousel-item">
+                <img src="img/img-home-hori-08.jpg"
+                class="d-none d-md-block home-banner">
+                <img src="img/img-home-verti-08.jpg"
+                class="d-block d-md-none home-banner-mobile">
+            </div>
+            <!-- IMAGEM 09 -->
+            <div class="carousel-item">
+                <img src="img/img-home-hori-09.jpg"
+                class="d-none d-md-block home-banner">
+                <img src="img/img-home-verti-09.jpg"
+                class="d-block d-md-none home-banner-mobile">
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- SECTION 2: A CONFERÊNCIA -->
     <section id="conferencia" class="conferencia-section">
         <div class="container">
+            <!-- CONTADOR REGRESSIVO INTEGRADO -->
+            <div class="contador-wrapper text-center mb-5 pb-3">
+                <h3 class="contador-titulo mb-3">FALTAM APENAS</h3>
+                
+                <div id="contador" class="d-flex justify-content-center align-items-center gap-3 gap-md-4">
+                    <div class="contador-box">
+                        <span id="dias" class="contador-num">00</span>
+                        <span class="contador-label">DIAS</span>
+                    </div>
+                    <div class="contador-separador">:</div>
+                    <div class="contador-box">
+                        <span id="horas" class="contador-num">00</span>
+                        <span class="contador-label">HORAS</span>
+                    </div>
+                    <div class="contador-separador">:</div>
+                    <div class="contador-box">
+                        <span id="minutos" class="contador-num">00</span>
+                        <span class="contador-label">MIN</span>
+                    </div>
+                    <div class="contador-separador">:</div>
+                    <div class="contador-box">
+                        <span id="segundos" class="contador-num">00</span>
+                        <span class="contador-label">SEG</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTEÚDO DA CONFERÊNCIA -->
             <div class="row align-items-center gy-4">
                 <div class="col-lg-6">
                     <div class="section-title">
@@ -59,17 +168,18 @@
                         A CONFERÊNCIA
                     </div>
                     <p class="conferencia-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius-mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehende-rit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        A nossa Conferência 2026 é um convite para caminharmos juntos em direção à presença de Deus. Mais do que um evento, serão dias de adoração, ensino, comunhão e transformação, nos quais seremos conduzidos a compreender que o sobrenatural não é um destino, mas um caminho que começa em Jesus Cristo e se manifesta em uma vida rendida ao Senhor. Prepare-se para viver momentos marcantes de louvor, ministrações inspiradoras e encontros que fortalecerão a sua fé e renovarão a sua paixão pela presença de Deus. O caminho está aberto. Há mais do Senhor para nós.
                     </p>
-                    <a href="#" class="btn-inscreva-se">INSCREVA-SE</a>
+                    <a href="#inscricao" class="btn-inscreva-se">INSCREVA-SE</a>
                 </div>
                 <div class="col-lg-6">
-                    <!-- COMENTÁRIO: Substituir pelo banner real da conferência -->
                     <div class="conferencia-img-placeholder"></div>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- SECTION 3: PRELETORES -->
     <section id="preletores" class="preletores-section">
@@ -130,7 +240,7 @@
                         <div class="prog-author">Pr. Marcelo Santos</div>
                     </div>
                     <div class="programacao-item">
-                        <div class="prog-date">15 / AGO • SÁBADO  |  9H - 10h</div>
+                        <div class="prog-date">15 / AGO • SÁBADO  |  9H - 12h</div>
                         <div class="prog-desc"><strong>Cafezão DNA Rio de Janeiro</strong></div>
                         <div class="prog-author">Pr. André Iglesias / Pr. Lívio Renato</div>
                     </div>
@@ -164,103 +274,146 @@
         </div>
     </section>
 
-    <!-- SECTION 5: LOJA -->
-    <section id="loja" class="loja-section">
-        <div class="container">
-            <div class="section-title mb-5">
-                <span class="dot-group">
-                    <span class="dot dot-blue"></span>
-                    <span class="dot dot-orange"></span>
-                    <span class="dot dot-yellow"></span>
-                </span> 
-                LOJA
-            </div>
 
-            <!-- Wrapper para as setas ficarem externas ao grid de conteúdo -->
-            <div class="carousel-outer-wrapper">
-                <div id="carouselLoja" class="carousel slide" data-bs-ride="false">
-                    <div class="carousel-inner">
-                        <!-- Slide 1 (Produtos 1 a 4) -->
-                        <div class="carousel-item active">
-                            <div class="row g-4">
-                                <!-- T-shirt 01------------------------------------------ -->
-                                <div class="col-12 col-md-3">
-                                    <div class="produto-card">
-                                        
-                                        <!-- Carrossel T-shirt 01 -->
-                                        <div id="carouselCanecas" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="img/loja/tshirt_01_frente.jpg" class="d-block w-100 produto-img-carousel" alt="Caneca 1">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="img/loja/tshirt_01_costas.jpg" class="d-block w-100 produto-img-carousel" alt="Caneca 2">
-                                                </div>
-                                            </div>
-                                        </div>
+    <!-- SECTION 7: FAQ -->
 
-                                        <div class="produto-info pt-3">
-                                            <h6>T-SHIRT SANTO É O SENHOR</h6>
-                                            <p>Coleção CONF 2026</p>
-                                            <span class="produto-preco">R$ 30,00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- T-shirt 01------------------------------------------ -->
+<section id="faq" class="faq-section">
 
-                                <div class="col-12 col-md-3">
-                                    <div class="produto-card"><div class="produto-img-placeholder"></div><div class="produto-info"><h6>NOME DO PRODUTO 2</h6><p>Informações sobre o produto</p><span class="produto-preco">R$ 30,00</span></div></div>
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <div class="produto-card"><div class="produto-img-placeholder"></div><div class="produto-info"><h6>NOME DO PRODUTO 3</h6><p>Informações sobre o produto</p><span class="produto-preco">R$ 30,00</span></div></div>
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <div class="produto-card"><div class="produto-img-placeholder"></div><div class="produto-info"><h6>NOME DO PRODUTO 4</h6><p>Informações sobre o produto</p><span class="produto-preco">R$ 30,00</span></div></div>
-                                </div>
-                            </div>
-                        </div>
+    <div class="container">
 
-                        <!-- Slide 2 (Produtos 5 a 8) -->
-                        <div class="carousel-item">
-                            <div class="row g-4">
-                                <div class="col-6 col-md-3">
-                                    <div class="produto-card">
-                                        <div class="produto-img-placeholder"></div>
-                                        <div class="produto-info">
-                                            <h6>NOME DO PRODUTO 5</h6>
-                                            <p>Informações sobre o produto</p>
-                                            <span class="produto-preco">R$ 30,00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <div class="produto-card"><div class="produto-img-placeholder"></div><div class="produto-info"><h6>NOME DO PRODUTO 6</h6><p>Informações sobre o produto</p><span class="produto-preco">R$ 30,00</span></div></div>
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <div class="produto-card"><div class="produto-img-placeholder"></div><div class="produto-info"><h6>NOME DO PRODUTO 7</h6><p>Informações sobre o produto</p><span class="produto-preco">R$ 30,00</span></div></div>
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <div class="produto-card"><div class="produto-img-placeholder"></div><div class="produto-info"><h6>NOME DO PRODUTO 8</h6><p>Informações sobre o produto</p><span class="produto-preco">R$ 30,00</span></div></div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="section-title mb-5">
+            <span class="dot-group">
+                <span class="dot dot-blue"></span>
+                <span class="dot dot-orange"></span>
+                <span class="dot dot-yellow"></span>
+            </span>
+            FAQ
+        </div>
+
+
+        <div class="accordion" id="faqAccordion">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#pergunta01">
+                            Posso levar crianças para a Conferência
+                    </button>
+                </h2>
+                <div id="pergunta01"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Sim. Teremos uma Conferência Kids especialmente preparada para elas.
                     </div>
                 </div>
-
-                <!-- Controles do Carousel principal de produtos -->
-                <button class="carousel-control-prev custom-arrow-prev" type="button" data-bs-target="#carouselLoja" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next custom-arrow-next" type="button" data-bs-target="#carouselLoja" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
             </div>
 
-            <div class="text-center mt-5">
-                <a href="#" class="btn-whatsapp">FAÇA SEU PEDIDO PELO NOSSO WHATSAPP</a>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#pergunta02">
+                            Se é gratuita, porque tenho que fazer minha inscrição?
+                    </button>
+                </h2>
+                <div id="pergunta02"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        A inscrição é gratuita, mas muito importante para nós. Ela nos ajuda a organizar a estrutura da conferência, preparar os espaços, dimensionar as equipes, garantir conforto para todos e proporcionar a melhor experiência possível. Além disso, durante a inscrição você terá a oportunidade de, se desejar, fazer uma oferta voluntária para nos ajudar a tornar esta conferência ainda melhor. Sua contribuição não é obrigatória e não interfere na sua participação. Estamos felizes em receber você!
+                    </div>
+                </div>
             </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#pergunta03">
+                            Como funcionará o estacionamento?
+                    </button>
+                </h2>
+                <div id="pergunta03"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Nosso estacionamento possui vagas limitadas. Por isso, recomendamos que você chegue com antecedência caso deseje estacionar no local. Quando o estacionamento atingir sua capacidade, nossa equipe de voluntários orientará os motoristas sobre as melhores alternativas nas proximidades. Se possível, a opção mais prática e confortável é utilizar aplicativos de transporte, como Uber, evitando transtornos e facilitando sua chegada à conferência.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#pergunta04">
+                            A cantina estará funcionando normalmente?
+                    </button>
+                </h2>
+                <div id="pergunta04"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+Sim! Durante toda a conferência, nossa cantina estará funcionando normalmente, oferecendo diversas opções de alimentos e bebidas. Além disso, teremos food trucks com ainda mais variedades para você aproveitar nos intervalos. E, se tudo acontecer como planejado, esta também será a oportunidade de conhecer o VIVA Café, nosso novo espaço de convivência, que poderá ser inaugurado durante a conferência. Tudo foi pensado para que você tenha uma experiência agradável do início ao fim.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#pergunta05">
+                            Posso levar convidados que não são membros da igreja?
+                    </button>
+                </h2>
+                <div id="pergunta05"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+Com certeza! A Conferência VIVA é aberta a todos. Você pode convidar familiares, amigos e qualquer pessoa que deseje viver esse tempo conosco, independentemente de ser membro da nossa igreja. Apenas orientamos que cada participante realize sua inscrição gratuitamente, para que possamos organizar a estrutura do evento e oferecer a melhor experiência possível a todos. Estamos ansiosos para receber vocês! <strong>Apenas não esqueça de fazer a inscrição deles.</strong>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section>
+
+    </div>
+
+</section>
+
+
+
+    <!-- INSCRIÇÃO -->
+<section id="inscricao" class="inscricao-section py-5">
+    <div class="container text-center">
+
+        <div class="section-title mb-5">
+            <span class="dot-group">
+                <span class="dot dot-blue"></span>
+                <span class="dot dot-orange"></span>
+                <span class="dot dot-yellow"></span>
+            </span>
+            Inscrição
+        </div>
+
+        <p class="inscricao-text mb-4">
+<strong>Nossa Conferência é totalmente gratuita</strong>, porque acreditamos que aquilo que recebemos da graça de Deus também deve ser compartilhado pela graça. Mas você pode fazer parte de algo ainda maior.
+<br><br>A sua generosidade nos ajuda a preparar cada detalhe, acolher mais pessoas e tornar esta experiência ainda mais especial. Ao realizar sua inscrição, se desejar, faça uma oferta de amor no próprio sistema e contribua para que vidas sejam alcançadas através desta conferência.
+        </p>
+
+        <a href="https://eventos.sistemaprover.com.br/pt/vilavalqueire/confviva2026" target="_blank" class="btn-inscreva-se ">FAÇA AQUI A SUA INSCRIÇÃO</a>
+
+    </div>
+</section>
+
+
+    
 
     <!-- SECTION 6: COMO CHEGAR -->
     <section id="como-chegar" class="como-chegar-section">
@@ -333,15 +486,21 @@ Professor da Faculdade Teológica Batista de São Paulo e Docente Nacional do In
             <div class="modal-body text-center px-4 pb-5">
                 <div class="preletor-img-placeholder p-2 mx-auto mb-4" style="max-width: 200px; height: 200px; border-radius: 50%;"></div>
                 
-                <h4 class="fw-bold mb-2" style="color: var(--text-light);">PR. MARCELO SANTOS</h4>
+                <h4 class="fw-bold mb-2" style="color: var(--text-light);">PR. ANDRE IGLESIAS</h4>
                 <p class="text-uppercase mb-4" style="color: var(--accent-orange); font-size: 0.85rem; font-weight: 700; letter-spacing: 1px;">
-                    Igreja Batista da Graça - São Paulo
+                    Viva Church – Saquarema - RJ
                 </p>
                 
                 <p class="text-muted" style="font-size: 0.9rem; line-height: 1.6;">
 
                 <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; line-height: 1.6;">
-                    Escreva aqui o texto biográfico do preletor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Pastor André Iglesias é pastor sênior da VIVA Church, em Saquarema, Rio de Janeiro. Casado com a Pastora Tainara Iglesias, é pai de Cainã, Tamara e Natã Iglesias.
+<br><br>
+Além de liderar a VIVA Church, atua como Coordenador da Conexão DNA na Região dos Lagos, dedicando-se ao fortalecimento de líderes, ao desenvolvimento de igrejas e à expansão da visão celular.
+<br><br>
+À frente de uma igreja relacional, apaixonada por Jesus e pelas pessoas, tem inspirado pastores e líderes a viverem o discipulado de forma prática e transformadora. Através da visão celular, a VIVA Church tem crescido de forma saudável e relevante, impactando a cidade de Saquarema com o amor de Cristo, restaurando famílias, formando líderes e conduzindo vidas a um encontro transformador com Jesus.
+<br><br>
+Sua mensagem é marcada pela fidelidade às Escrituras, pela paixão por ver pessoas vivendo o propósito de Deus e igrejas cumprindo sua missão de fazer discípulos que fazem discípulos.
                 </p>
             </div>
         </div>
@@ -418,7 +577,9 @@ Serve como líder da Conexão Baixada Fluminense do DNA, investindo no fortaleci
                 <p class="text-muted" style="font-size: 0.9rem; line-height: 1.6;">
 
                 <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; line-height: 1.6;">
-                    Escreva aqui o texto biográfico do preletor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Welington Ribeiro é pastor vice presidente da VIVA, com mais de 20 anos de experiência no ministério pastoral e aconselhamento, casado com Laila Ribeiro e pai da Jéssica e Benjamin Ribeiro.
+<br><br>
+Formado em Teologia com especialização em Missiologia, possui certificação em Liderança Avançada pelo Instituto Haggai e Faculdade Hebraica de Jerusalém. Pastor Welington já liderou diversos grupos em viagens missionárias pelo Brasil com ações urbanas e sociais. Tem apoiado a nossa igreja a seguir propagando o evangelho, impactando pessoas e expressando Cristo ao mundo.
                 </p>
             </div>
         </div>
@@ -442,12 +603,50 @@ Serve como líder da Conexão Baixada Fluminense do DNA, investindo no fortaleci
                 <p class="text-muted" style="font-size: 0.9rem; line-height: 1.6;">
 
                 <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem; line-height: 1.6;">
-                    Escreva aqui o texto biográfico do preletor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Casado com Patrícia Magalhães e pai de Matheus Magalhães. 
+                    <br><br>
+Músico, advogado, teólogo e pastor ordenado em 2005.
+                    <br><br>
+Pastor de Celebração na Igreja VIVA desde Março 2026.
                 </p>
             </div>
         </div>
     </div>
 </div>
+
+<!-- BOTÃO FLUTUANTE -->
+    <a href="#inscricao" class="btn-flutuante" aria-label="Ir para área de Inscrição">
+        <img src="img/btflut.jpg" alt="Botão Flutuante" class="btn-flutuante-img">
+    </a>
+
+
+<script>
+    // Data alvo: 13 de Agosto de 2026 às 19:30:00
+    const dataEvento = new Date("Aug 13, 2026 19:30:00").getTime();
+
+    const atualizarContador = setInterval(function() {
+        const agora = new Date().getTime();
+        const diferenca = dataEvento - agora;
+
+        if (diferenca > 0) {
+            // Cálculos para Dias, Horas, Minutos e Segundos
+            const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+
+            // Injeta os valores no HTML formatados com 2 dígitos
+            document.getElementById("dias").innerText = String(dias).padStart(2, '0');
+            document.getElementById("horas").innerText = String(horas).padStart(2, '0');
+            document.getElementById("minutos").innerText = String(minutos).padStart(2, '0');
+            document.getElementById("segundos").innerText = String(segundos).padStart(2, '0');
+        } else {
+            // Mensagem ao encerrar/iniciar o evento
+            clearInterval(atualizarContador);
+            document.getElementById("contador").innerHTML = "<h4 class='text-white fw-bold'>A CONFERÊNCIA COMEÇOU!</h4>";
+        }
+    }, 1000);
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

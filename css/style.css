@@ -119,13 +119,19 @@ body {
 /* ==========================================================================
    HOME (DESKTOP FIRST)
    ========================================================================== */
-.hero-home {
-    width: 100%;
-    aspect-ratio: 2 / 1; 
-    background-image: url('../img/img-home-hori.jpg'); 
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: top center;
+.home-banner{
+
+    width:100%;
+    display:block;
+
+}
+
+
+.home-banner-mobile{
+
+    width:100%;
+    display:block;
+
 }
 
 /* SMARTPHONE (Imagem Vertical) */
@@ -314,4 +320,190 @@ body {
     height: 280px;          /* Casando perfeitamente com os seus 280px padrão */
     object-fit: cover;      /* Não deixa a imagem da caneca distorcer */
     border-radius: 8px;     /* Deixa os cantos arredondados */
+}
+
+/***************************************************
+                    FAQ
+****************************************************/
+
+.faq-section{
+    padding:100px 0;
+}
+
+
+.faq-section .accordion-item{
+
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+}
+
+
+.faq-section .accordion-button{
+
+    background-color:transparent;
+    color:white;
+    font-weight:700;
+    font-size:1rem;
+
+    padding:30px 0;
+
+    box-shadow:none;
+
+}
+
+
+.faq-section .accordion-button:not(.collapsed){
+
+    background-color:transparent;
+    color:white;
+    box-shadow:none;
+
+}
+
+
+.faq-section .accordion-button:focus{
+
+    box-shadow:none;
+
+}
+
+
+.faq-section .accordion-body{
+
+    color:var(--text-muted);
+
+    line-height:1.8;
+
+    padding:0 0 30px 0;
+
+}
+
+
+.faq-section .accordion-button::after{
+
+    filter:invert(1);
+
+}
+
+/* ==========================
+   INSCRIÇÃO
+========================== */
+
+.inscricao-section {
+    padding: 100px 0;
+}
+
+.inscricao-text {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.btn-inscricao {
+    padding: 18px 45px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: .3s ease;
+}
+
+/* Efeito Hover */
+.btn-inscricao:hover {
+    transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   BOTÃO FLUTUANTE
+   ========================================================================== */
+.btn-flutuante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Torna o botão redondo. Remova esta linha se seu PNG for quadrado */
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-flutuante:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.btn-flutuante-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Redução sutil em telas muito pequenas para não cobrir tanto conteúdo */
+@media (max-width: 576px) {
+    .btn-flutuante {
+        width: 80px;
+        height: 80px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+/* ==========================================================================
+   CONTADOR DINÂMICO
+   ========================================================================== */
+.contador-wrapper {
+    width: 100%;
+}
+
+.contador-titulo {
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: var(--accent-orange);
+    text-transform: uppercase;
+}
+
+.contador-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 70px;
+}
+
+.contador-num {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--text-light);
+    line-height: 1;
+}
+
+.contador-separador {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--accent-orange);
+    line-height: 1;
+    margin-bottom: 14px;
+}
+
+.contador-label {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--text-light);
+    letter-spacing: 1.5px;
+    margin-top: 6px;
+}
+
+@media (max-width: 576px) {
+    .contador-num { font-size: 2rem; }
+    .contador-separador { font-size: 1.5rem; margin-bottom: 10px; }
+    .contador-box { min-width: 50px; }
+    .contador-label { font-size: 0.6rem; }
 }
