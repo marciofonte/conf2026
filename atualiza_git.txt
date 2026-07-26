@@ -2,7 +2,7 @@
 git add .
 
 # 2. Salva as alterações com uma mensagem explicando o que foi feito
-git commit -m "atualização carroussel da loja"
+git commit -m "atualização geral 26 julho"
 
 # 3. Envia tudo para o repositório online
 git push origin main
